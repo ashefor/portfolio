@@ -1,0 +1,27 @@
+.nav_menu{
+    display: flex;
+}
+.nav_menu_other{
+    margin-left: auto
+}
+.nav_menu_other li{
+    padding: 10px;
+    list-style: none;
+    font-size: 20px;
+}
+.nav_menu_other li a{
+    text-decoration: none;
+    color: black;
+}
+.nav_menu_links{
+    display: flex
+}
+.nav_menu_links li{
+    list-style: none;
+    padding: 10px;
+    font-size: 20px;
+}
+.nav_menu_links li a{
+    text-decoration: none;
+    color: black
+}
