@@ -1,6 +1,8 @@
 @import url('https://fonts.googleapis.com/css?family=Montserrat+Alternates:400,500&display=swap');
 .nav_menu{
     display: flex;
+    max-width: 1500px;
+    margin: auto;
 }
 .nav_menu_other{
     margin-left: auto;
@@ -16,8 +18,19 @@
     text-decoration: none;
     color: black;
 }
-.nav_menu_links{
+.rotating img{
+    animation: rotate 2s linear infinite;
+    -webkit-animation: rotate 2s linear infinite;
 }
+@keyframes rotate{
+    100%{
+        transform: rotatey(360deg)
+    }
+}
+.nav_menu_links img{
+    
+}
+
 .nav_menu_links li{
     list-style: none;
     padding: 10px;

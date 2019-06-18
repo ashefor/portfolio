@@ -1,6 +1,25 @@
 @import url('https://fonts.googleapis.com/css?family=Montserrat+Alternates:400,500&display=swap');
+*{
+    box-sizing: border-box;
+}
+a{
+    text-decoration: none;
+}
+h1,h2,h3,h4,h5,h6{
+    line-height: 1.2em;
+    margin: 0;
+    margin-bottom: .5rem;
+}
+p{
+    margin: 0
+}
+textarea{
+    resize: none
+}
 .nav_menu{
     display: flex;
+    max-width: 1500px;
+    margin: auto;
 }
 .nav_menu_other{
     margin-left: auto;
@@ -28,25 +47,128 @@
     text-decoration: none;
     color: black
 }
+.rotating img{
+    animation: rotate 2s linear infinite;
+    -webkit-animation: rotate 2s linear infinite;
+}
+@keyframes rotate{
+    100%{
+        transform: rotatey(360deg)
+    }
+}
 .homesection{
     /* display: flex */
     height: 100vh;
 }
+.get_in_touch{
+    text-align: center
+}
 .contact{
-    display: flex;
-    max-width: 1000px;
+    /* display: flex; */
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-gap: 4rem;
+    margin-top: 4rem;
+    max-width: 1100px;
     margin-left: auto;
     margin-right: auto;
 }
 .contact_form_container{
-    width: 100%
+    width: 100%;
+    border: 2px solid #394bad;
+    padding: 5rem;
 }
 .contact_info{
     width: 100%
+}
+.contact_info h3{
+    font-size: 30px;
+    font-family: 'Montserrat Alternates', sans-serif;
+}
+.contact_info p{
+    line-height: 1.5;
+    font-size: 20px;
+    font-family: 'Montserrat Alternates', sans-serif;
+    margin-bottom: 1rem;
 }
 .contact_form input{
     width: 100%
 }
 .contact_form textarea{
     width: 100%
+}
+.contact_header{
+    display: inline-block;
+    max-width: 1100px;
+    margin: auto;
+    position: relative;
+    text-align: center;
+    font-size: 50px;
+    margin-top: 3rem;
+    /* border-bottom: 2px solid; */
+}
+.contact_header p{
+    text-align: right;
+    width: auto;
+    text-transform: uppercase;
+    background-color: white;
+    margin: 0px;
+    padding-left: 10px;
+    position: absolute;
+    right: 0;
+    bottom: -10px;
+    color: #f6483b;
+    font-weight: 500;
+    font-size: 15px;
+    z-index: 1;
+}
+.contact_header:after{
+    content: "";
+    width: 100%;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    font-size: 15px;
+    height: 2px;
+    color: red;
+    background-color: black;
+}
+.contact_input, .contact_button{
+    width: 100%;
+    height: 51px;
+    margin-bottom: 2rem;
+    padding: 0 1rem;
+    font-size: 16px;
+    border: 1px solid #a1a1a4;
+}
+.contact_button{
+    background: rgb(114, 150, 204)
+}
+.contact_button:hover{
+    font-size: 20px;
+    /* transition: 2s; */
+}
+.contact_msg{
+    height: 150px;
+    width: 100%;
+    padding: 1rem;
+    border: 1px solid #a1a1a4;
+    font-size: 16px;
+}
+.contact_input::placeholder{
+    text-transform: capitalize;
+    color: #0f0d0d;
+    /* font-weight: 900 */
+}
+.contact_msg::placeholder{
+    color: #0f0d0d;
+}
+.social_media_icons{
+    display: flex;
+    justify-content: space-between;
+    width: 80%;
+    font-size: 40px;
+}
+.social_media_icons .fab{
+    color: #303030
 }
