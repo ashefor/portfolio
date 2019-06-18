@@ -1,0 +1,73 @@
+.nav_menu{
+    display: flex;
+}
+.nav_menu_other{
+    margin-left: auto;
+    display: flex
+}
+.nav_menu_other li{
+    padding: 10px;
+    list-style: none;
+    font-size: 20px;
+    margin: auto;
+}
+.nav_menu_other li a{
+    text-decoration: none;
+    color: white;
+}
+.nav_menu_links{
+}
+.nav_menu_links li{
+    list-style: none;
+    padding: 10px;
+    font-size: 20px;
+    margin: auto
+}
+.nav_menu_links li a{
+    text-decoration: none;
+    color: white
+}
+.homesection{
+    /* display: flex */
+    /* height: 100vh; */
+}
+.homesection_img{
+    /* background-image: url('../../../assets/profile.JPG');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover */
+    width: 100%;
+}
+.homesection_info{
+    background-image: url('../../../assets/img1.jpg');
+    /* background-position: center; */
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 100vh;
+    text-align: center;
+    position: relative;
+}
+
+.homesection_img img{
+    width: 100%;
+    height: auto;
+    transform: rotate(90deg)
+}
+.homesection_info{
+    width: 100%
+}
+.homesection_headers{
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    color: white;
+}
+.homesection_headers h1{
+    font-size: 150px;
+    margin: auto;
+}
+.homesection_headers h4{
+    font-size: 30px;
+    margin: auto;
+}
