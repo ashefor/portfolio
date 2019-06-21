@@ -130,7 +130,7 @@ textarea{
     left: 0;
     font-size: 15px;
     height: 2px;
-    color: red;
+    /* color: red; */
     background-color: black;
 }
 .contact_input, .contact_button{

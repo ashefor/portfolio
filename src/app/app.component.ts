@@ -1,4 +1,5 @@
 import { Component } from '@angular/core';
+import { Title } from '@angular/platform-browser';
 
 @Component({
   selector: 'app-root',
@@ -6,5 +7,14 @@ import { Component } from '@angular/core';
   styleUrls: ['./app.component.css']
 })
 export class AppComponent {
-  title = 'portfolio';
+  title = 'Michael Ashefor-Frontend Developer';
+
+  constructor(private titleService: Title){
+  }
+  setDocTitle(title: string) {
+    console.log('current title:::::' + this.titleService.getTitle());
+    this.titleService.setTitle(title);
+ }
 }
+
+

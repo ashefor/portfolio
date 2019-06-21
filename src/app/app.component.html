@@ -1,14 +1,32 @@
 <!-- <div>
-  <nav class="nav_menu">
-    <div class="nav_menu_links">
-      <li><a href="">Home</a></li>
-      <li><a href="">Home</a></li>
-      <li><a href="">Home</a></li>
+  <section class="homesection">
+    <div class="homesection_info">
+      <nav class="nav_menu">
+        <div class="nav_menu_links">
+          <li class="rotating">
+            <a routerLink="/" (click)="setDocTitle( 'Home' )">
+              <img src="../../../assets/CPT..png" alt="logo" width="50">
+            </a>
+          </li>
+        </div>
+        <div class="nav_menu_other">
+          <li><a routerLink="/about" (click)="setDocTitle( 'About' )">About</a></li>
+          <li><a href="/contact" (click)="setDocTitle( 'Contact' )">Contact</a></li>
+          <li><a routerLink="" (click)="setDocTitle( 'Projects' )">Projects</a></li>
+        </div>
+      </nav>
+      <div class="homesection_headers">
+        <h1 class="animated bounceIn">
+          Hello;
+        </h1>
+        <h4 class="animated bounceIn">
+          i'm Michael Ashefor. Frontend Web developer
+        </h4>
+      </div>
     </div>
-    <div class="nav_menu_other">
-      <li><a href="">Projects</a></li>
-    </div>
-  </nav>
+  </section>
 </div> -->
+
+
 
 <router-outlet></router-outlet>
