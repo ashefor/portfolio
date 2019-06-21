@@ -1,4 +1,21 @@
 @import url('https://fonts.googleapis.com/css?family=Montserrat+Alternates:400,500&display=swap');
+*{
+    box-sizing: border-box;
+}
+a{
+    text-decoration: none;
+}
+h1,h2,h3,h4,h5,h6{
+    line-height: 1.2em;
+    margin: 0;
+    margin-bottom: .5rem;
+}
+p{
+    margin: 0
+}
+textarea{
+    resize: none
+}
 .nav_menu{
     display: flex;
     max-width: 1500px;
@@ -6,10 +23,12 @@
 }
 .nav_menu_other{
     margin-left: auto;
+}
+.nav_menu_other ul{
     display: flex
 }
 .nav_menu_other li{
-    padding: 10px;
+    padding: 20px;
     list-style: none;
     font-size: 20px;
     margin: auto;
@@ -17,6 +36,23 @@
 .nav_menu_other li a{
     text-decoration: none;
     color: black;
+}
+.nav_menu_links{
+    margin-bottom: auto;
+    margin-top: auto;
+}
+.nav_menu_links ul{
+    display: flex
+}
+.nav_menu_links li{
+    list-style: none;
+    padding: 20px;
+    font-size: 20px;
+    margin: auto
+}
+.nav_menu_links li a{
+    text-decoration: none;
+    color: black
 }
 .rotating img{
     animation: rotate 2s linear infinite;
@@ -27,23 +63,16 @@
         transform: rotatey(360deg)
     }
 }
+.homesection{
+    /* display: flex */
+    height: 100vh;
+}
 .nav_menu_links img{
     
-}
-
-.nav_menu_links li{
-    list-style: none;
-    padding: 10px;
-    font-size: 20px;
-    margin: auto
 }
 .nav_menu_links li a{
     text-decoration: none;
     color: black
-}
-.homesection{
-    /* display: flex */
-    /* height: 100vh; */
 }
 .homesection_img{
     width: 100%;
@@ -97,4 +126,8 @@
 .homesection_headers h4{
     font-size: 30px;
     margin: auto;
+}
+img{
+    /* max-width: 100%; */
+    vertical-align: middle;
 }

@@ -23,10 +23,12 @@ textarea{
 }
 .nav_menu_other{
     margin-left: auto;
+}
+.nav_menu_other ul{
     display: flex
 }
 .nav_menu_other li{
-    padding: 10px;
+    padding: 20px;
     list-style: none;
     font-size: 20px;
     margin: auto;
@@ -36,10 +38,15 @@ textarea{
     color: black;
 }
 .nav_menu_links{
+    margin-bottom: auto;
+    margin-top: auto;
+}
+.nav_menu_links ul{
+    display: flex
 }
 .nav_menu_links li{
     list-style: none;
-    padding: 10px;
+    padding: 20px;
     font-size: 20px;
     margin: auto
 }
@@ -64,7 +71,6 @@ textarea{
     text-align: center
 }
 .contact{
-    /* display: flex; */
     display: grid;
     grid-template-columns: 1fr 1fr;
     grid-gap: 4rem;
@@ -121,6 +127,7 @@ textarea{
     font-weight: 500;
     font-size: 15px;
     z-index: 1;
+    font-family: 'Montserrat Alternates', sans-serif;
 }
 .contact_header:after{
     content: "";
@@ -171,4 +178,8 @@ textarea{
 }
 .social_media_icons .fab{
     color: #303030
+}
+img{
+    max-width: 100%;
+    vertical-align: middle;
 }

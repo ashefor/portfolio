@@ -17,7 +17,7 @@ export class ContactComponent implements OnInit {
   }
 
   gohere(){
-    this.route.navigate(['/contact'], {queryParams: {q: 'name'}, fragment: "loading"})
+    this.route.navigate(['/contact'], {fragment: "loading"})
   }
 
   setDocTitle(title: string) {
