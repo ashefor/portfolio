@@ -11,7 +11,7 @@ const routes: Routes = [
   {path: 'contact', component: ContactComponent, data: {title: 'Contact- Michael Ashefor - Frontend Developer'}},
   {path: 'about', component: AboutComponent, data: {title: 'About- Michael Ashefor - Frontend Developer'}},
   {path: 'projects', component: ProjectsComponent, data: {title: 'Projects- Michael Ashefor - Frontend Developer'}},
-  {path: 'skills', component: SkillsComponent, data: {title: 'Skills- Michael Ashefor - Frontend Developer'}}
+  // {path: 'skills', component: SkillsComponent, data: {title: 'Skills- Michael Ashefor - Frontend Developer'}}
 ];
 
 @NgModule({

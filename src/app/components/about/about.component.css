@@ -65,7 +65,7 @@ textarea{
 }
 .homesection{
     /* display: flex */
-    height: 100vh;
+    /* height: 100vh; */
 }
 .about_me{
     text-align: left;
@@ -155,4 +155,46 @@ img{
 }
 .about_me_wrapper{
     margin: auto;
+}
+footer{
+    margin-top: 100px;
+    max-width: 1100px;
+    margin-left: auto;
+    margin-right: auto;
+}
+.footer_details{
+    padding-top: 30px;
+    padding-bottom: 30px;
+}
+.footer_details p{
+    display: inline-block;
+}
+.footer_details p span{
+    font-weight: 900
+}
+.footer_details ul{
+    float: right;
+    width: auto;
+    margin: 0px;
+    padding: 0px;
+}
+.footer_details ul li{
+    display: inline-block;
+    width: auto;
+    list-style: none;
+    margin: 0px 0px;
+}
+.footer_details ul li a{
+    display: inline-block;
+    width: 30px;
+    height: 30px;
+    line-height: 30px;
+    text-align: center;
+    color: #1c1c1c;
+    font-size: 20px;
+    -webkit-transition: all 0.3s;
+    -moz-transition: all 0.3s;
+    -ms-transition: all 0.3s;
+    -o-transition: all 0.3s;
+    transition: all 0.3s;
 }
