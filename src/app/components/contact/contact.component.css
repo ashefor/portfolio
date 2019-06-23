@@ -5,6 +5,10 @@
 a{
     text-decoration: none;
 }
+ul{
+    margin: 0;
+    padding: 0;
+}
 h1,h2,h3,h4,h5,h6{
     line-height: 1.2em;
     margin: 0;
@@ -30,12 +34,28 @@ textarea{
 .nav_menu_other li{
     padding: 20px;
     list-style: none;
-    font-size: 20px;
-    margin: auto;
+    margin-left: 2rem;
 }
-.nav_menu_other li a{
-    text-decoration: none;
-    color: black;
+.navlink{
+    height: 50px;
+    line-height: 50px;
+    color: #303030;
+    font-size: 15px;
+    font-weight: 400;
+    padding: 0 20px;
+    min-width: 140px;
+    outline: none;
+    cursor: pointer;
+    display: inline-block;
+    text-align: center;
+    text-transform: uppercase;
+    border: 2px solid transparent;
+    transition: all 0.3s;
+}
+.navlink:hover{
+    color: #7296cc;
+    background-color: transparent;
+    border-color: #7296cc
 }
 .nav_menu_links{
     margin-bottom: auto;
@@ -57,6 +77,15 @@ textarea{
 .rotating img{
     animation: rotate 2s linear infinite;
     -webkit-animation: rotate 2s linear infinite;
+}
+.active{
+    color: #ffffff;
+    background-color: #7296cc;
+    /* border-color: #7296cc */
+}
+.active:hover{
+    color: #ffffff;
+    background-color: #7296cc;
 }
 @keyframes rotate{
     100%{
@@ -82,7 +111,7 @@ textarea{
 .contact_form_container{
     width: 100%;
     border: 2px solid #394bad;
-    padding: 5rem;
+    padding: 4rem;
 }
 .contact_info{
     width: 100%
@@ -143,12 +172,13 @@ textarea{
 .contact_input, .contact_button{
     width: 100%;
     height: 51px;
-    margin-bottom: 2rem;
+    margin-bottom: 1.5rem;
     padding: 0 1rem;
     font-size: 16px;
     border: 1px solid #a1a1a4;
 }
 .contact_button{
+    margin-bottom: 0;
     background: rgb(114, 150, 204)
 }
 .contact_button:hover{
@@ -175,55 +205,96 @@ img{
     max-width: 100%;
     vertical-align: middle;
 }
-
-footer{
-    margin-top: 100px;
-    max-width: 1100px;
-    margin-left: auto;
-    margin-right: auto;
+.social_media p i{
+    color: blue;
 }
-.footer_details{
-    padding-top: 30px;
-    padding-bottom: 30px;
+.social_media p span{
+    color: #0f0d0d
 }
-.footer_details p{
+.social_media ul{
+    margin: 0;
+    padding: 0;
+}
+.social_media ul li{
     display: inline-block;
+    list-style-type: none;
+    border-radius: 100%;
+    margin-right: 10px
+    /* color: #ffffff; */
+    /* background-color: transparent; */
 }
-.footer_details p span{
-    font-weight: 900
-}
-.footer_details ul{
-    float: right;
-    width: auto;
-    margin: 0px;
-    padding: 0px;
-}
-.footer_details ul li{
-    display: inline-block;
-    width: auto;
-    list-style: none;
-    margin: 0px 0px;
-}
-.footer_details ul li a{
+.social_media ul li a{
     display: inline-block;
     width: 30px;
     height: 30px;
-    line-height: 30px;
+    line-height: 35px;
     text-align: center;
-    color: #1c1c1c;
-    font-size: 20px;
-    -webkit-transition: all 0.3s;
-    -moz-transition: all 0.3s;
-    -ms-transition: all 0.3s;
-    -o-transition: all 0.3s;
-    transition: all 0.3s;
-}
-/* .footer_details ul li a:hover{
-    color: #ffffff;
-    background-color: #f6483b;
+    /* font-size: 20px; */
+    /* border-radius: 100%; */
+    /* color: #ffffff; */
+    /* color: #0f0d0d; */
+    /* border: 1px solid red; */
+    /* background-color: #f6483b; */
     -webkit-transition: all 0.3s;
     -moz-transition: all 0.3s;
     -ms-transition: all 0.3s;
     -o-transition: all 0.3s;
     transition: all 0.3s
-} */
+}
+.twitter, .linkedin{
+    color: #00aced;
+    border: 1px solid #00aced
+}
+.twitter:hover, .linkedin:hover{
+    color: #ffffff;
+    background-color: #00aced
+    /* border: 1px solid #00aced */
+}
+.facebook{
+    color: #3b5898;
+    border: 1px solid #3b5898
+}
+.facebook:hover{
+    color: #ffffff;
+    background-color: #3b5898
+    /* border: 1px solid #3b5898 */
+}
+.instagram{
+    color: #0f0d0d;
+    border: 1px solid black;
+}
+.instagram:hover{
+    color: #ffffff;
+    background-color: #f6483b;
+    border: 1px solid transparent;
+}
+.github{
+    color: #0f0d0d;
+    border: 1px solid black;
+}
+.github:hover{
+    color: #ffffff;
+    background-color: #f6483b;
+    border: 1px solid transparent;
+}
+footer{
+    margin-top: 50px;
+    max-width: 1100px;
+    margin-left: auto;
+    margin-right: auto;
+}
+.footer_details{
+    border-top: 1px solid;
+    display: flex;
+    padding-top: 30px;
+    padding-bottom: 30px;
+}
+.footer_details p{
+    display: inline-block;
+    margin-bottom: auto;
+    margin-top: auto;
+    margin: auto;
+}
+.footer_details p span{
+    font-weight: 900
+}
