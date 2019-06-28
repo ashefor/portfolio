@@ -179,11 +179,21 @@ textarea{
 }
 .contact_button{
     margin-bottom: 0;
-    background: rgb(114, 150, 204)
+    background: rgb(114, 150, 204);
+    outline: none;
 }
+
 .contact_button:hover{
-    font-size: 20px;
-    /* transition: 2s; */
+    background:#92bde7;
+    color:#fff;
+    outline:0;
+    transition: background-color 2s ease-out;
+}
+.contact_button:disabled:hover{
+    background:#92bde7;
+    color:#567199;
+    outline:0;
+    transition: background-color 2s ease-out;
 }
 .contact_msg{
     height: 150px;
@@ -298,3 +308,10 @@ footer{
 .footer_details p span{
     font-weight: 900
 }
+.alert{
+    text-align: center;
+    padding:10px;
+    background:#79c879;
+    color:#fff;
+    margin-bottom:10px;
+  }

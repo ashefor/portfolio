@@ -79,31 +79,21 @@
       </div>
       <div>
         <div class="contact_form_container">
-          <!-- <form class="contact_form" method="POST" action="https://formspree.io/mashefor@gmail.com">
+          <div *ngIf="submitted" class="alert">
+            <p>Your message has been sent</p>
+          </div>
+          <form [formGroup]="contactForm" class="contact_form" method="POST" (ngSubmit)="onSubmit()">
             <div>
-              <input type="text" name="name" class="contact_input" placeholder="name">
+              <input type="text" class="contact_input" placeholder="name" formControlName="name">
             </div>
             <div>
-              <input type="text" name="email" class="contact_input" placeholder="email">
+              <input type="email" class="contact_input" placeholder="email" formControlName="email">
             </div>
             <div>
-              <textarea name="message" id="" cols="30" rows="10" class="contact_msg"
+              <textarea formControlName="message" name="message" id="" cols="30" rows="10" class="contact_msg"
                 placeholder="Type your message here..."></textarea>
             </div>
-            <button type="submit" class="contact_button">Send</button>
-          </form> -->
-          <form class="contact_form" method="POST" name="contact" netlify>
-            <div>
-              <input type="text" name="name" class="contact_input" placeholder="name">
-            </div>
-            <div>
-              <input type="text" name="email" class="contact_input" placeholder="email">
-            </div>
-            <div>
-              <textarea name="message" id="" cols="30" rows="10" class="contact_msg"
-                placeholder="Type your message here..."></textarea>
-            </div>
-            <button type="submit" class="contact_button">Send</button>
+            <button type="submit" class="contact_button" [disabled]="contactForm.invalid || disableBtn">Send <span *ngIf="spinner"><img src="../../../assets/spinner.gif" width="25" alt="spinner"></span></button>
           </form>
         </div>
       </div>
