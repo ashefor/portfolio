@@ -30,7 +30,7 @@ import { ReactiveFormsModule, FormsModule } from '@angular/forms';
     AppRoutingModule,
     AngularFireDatabaseModule,
     AngularFireAuthModule,
-    // AngularFireModule.initializeApp(environment.firebase),
+    AngularFireModule.initializeApp(environment.firebase),
     ReactiveFormsModule,
     FormsModule
   ],
