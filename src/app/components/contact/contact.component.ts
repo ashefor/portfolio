@@ -24,8 +24,13 @@ export class ContactComponent implements OnInit {
     this.titleService.setTitle(this.title)
   }
 
-  gohere() {
-    this.route.navigate(['/contact'], { fragment: "loading" })
+  toggleMenu() {
+    let othernav = document.getElementById('linksha')
+    if (othernav.style.display === 'block') {
+      othernav.style.display = 'none'
+    } else {
+      othernav.style.display = 'block'
+    }
   }
 
   setDocTitle(title: string) {
@@ -41,15 +46,15 @@ export class ContactComponent implements OnInit {
   remove() {
     this.submitted = false;
   }
-  
+
   onSubmit() {
     this.spinner = true;
     this.disableBtn = true
-     if(this.contactForm.invalid){
-       this.spinner = false;
-        this.disableBtn = true
-       return
-     }
+    if (this.contactForm.invalid) {
+      this.spinner = false;
+      this.disableBtn = true
+      return
+    }
 
     const name = this.contactForm.value.name
     const email = this.contactForm.value.email

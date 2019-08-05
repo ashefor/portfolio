@@ -1,5 +1,5 @@
 <div class="homesection">
-  <section>
+  <section class="nav_wrapper">
     <div class="homesection_info">
       <nav class="nav_menu">
         <div class="nav_menu_links">
@@ -9,17 +9,22 @@
             </a>
           </li>
         </div>
-        <div class="nav_menu_other">
-            <ul>
-              <li><a routerLink="/about" routerLinkActive="active" class="navlink">About</a></li>
-              <li><a routerLink="/projects" routerLinkActive="active"  class="navlink">Projects</a></li>
-              <li><a routerLink="/contact" routerLinkActive="active"  class="navlink">Contact</a></li>
-            </ul>
-          </div>
+        <div id="linksha" class="nav_menu_other">
+          <ul>
+            <li><a routerLink="/about" routerLinkActive="active" class="navlink">About</a></li>
+            <li><a routerLink="/projects" routerLinkActive="active" class="navlink">Projects</a></li>
+            <li><a routerLink="/contact" routerLinkActive="active" class="navlink">Contact</a></li>
+          </ul>
+        </div>
+        <div class="nav_menu_other menuBtn" >
+          <li (click)="toggleMenu()">
+              <span id="openmenu" class="navlink">&#9778;</span>
+          </li>
+      </div>
       </nav>
     </div>
   </section>
-  <section>
+  <section class="padsection">
     <div class="get_in_touch">
       <div class="contact_header">
         <h4>Get in Touch</h4>
@@ -33,15 +38,10 @@
             Talk to me
           </h3>
           <p>
-            Laborum vel, yet irure or error for incidunt iure suscipit. Eiusmod. Elit. Quisquam illum dolores. Et do,
-            for dolore for beatae. Eum aliquam so natus quia esse yet consectetur, sunt. Error irure esse incididunt.
+            If you need my help with anything or you have any job or gig please fill the form and I
+            promise to get back to you. You can as well send me a mail or text or call me. My email
+            address and phone number are below.
           </p>
-          <!-- <p>
-            Eum. Aliquid elit, eius yet minima. Laboris. Modi reprehenderit aliquip. Ullamco laboris, perspiciatis. Eu
-            est inventore yet commodi suscipit, so voluptas. Numquam. Do. Vel error. Aspernatur ipsam but inventore for
-            do. Sequi id autem but modi so ex magni, ipsam. Tempora ab. Ab. Tempora voluptate fugiat voluptate ab so
-            occaecat. Sequi. Non aut so ipsum sunt quia.
-          </p> -->
         </div>
         <div class="social_media">
           <h3>
@@ -77,7 +77,7 @@
           </ul>
         </div>
       </div>
-      <div>
+      <div class="form_contact">
         <div class="contact_form_container">
           <div *ngIf="submitted" class="alert">
             <p>Your message has been sent</p>
@@ -93,7 +93,8 @@
               <textarea formControlName="message" name="message" id="" cols="30" rows="10" class="contact_msg"
                 placeholder="Type your message here..."></textarea>
             </div>
-            <button type="submit" class="contact_button" [disabled]="contactForm.invalid || disableBtn">Send <span *ngIf="spinner"><img src="../../../assets/spinner.gif" width="25" alt="spinner"></span></button>
+            <button type="submit" class="contact_button" [disabled]="contactForm.invalid || disableBtn">Send <span
+                *ngIf="spinner"><img src="../../../assets/spinner.gif" width="25" alt="spinner"></span></button>
           </form>
         </div>
       </div>

@@ -1,5 +1,5 @@
 <div class="homesection">
-  <section>
+  <section class="nav_wrapper">
     <div class="homesection_info">
       <nav class="nav_menu">
         <div class="nav_menu_links">
@@ -9,16 +9,26 @@
             </a>
           </li>
         </div>
-        <div class="nav_menu_other">
-            <ul>
-              <li><a routerLink="/about" routerLinkActive="active" class="navlink">About</a></li>
-              <li><a routerLink="/projects" routerLinkActive="active"  class="navlink">Projects</a></li>
-              <li><a routerLink="/contact" routerLinkActive="active"  class="navlink">Contact</a></li>
-            </ul>
-          </div>
+        <div id="linksha" class="nav_menu_other">
+          <ul>
+            <li><a routerLink="/about" routerLinkActive="active" class="navlink">About</a></li>
+            <li><a routerLink="/projects" routerLinkActive="active" class="navlink">Projects</a></li>
+            <li><a routerLink="/contact" routerLinkActive="active" class="navlink">Contact</a></li>
+          </ul>
+        </div>
+        <div class="nav_menu_other menuBtn">
+          <li (click)="toggleMenu()">
+            <span id="openmenu" class="navlink">&#9778;</span>
+          </li>
+        </div>
       </nav>
     </div>
   </section>
+  <!-- <div id="loading">
+    <div id="spinner">
+      <img src="../../assets/CPT..png" alt="" srcset="">
+    </div>
+  </div> -->
   <section>
     <div class="projects">
       <div class="projects_header">
@@ -33,8 +43,7 @@
             <div class="port_img">
               <img src="../../../assets/radrecipe.png" alt="Recipe site">
               <div class="port_text">
-                <h4>Recipe Site</h4>
-                <p>image sub</p>
+                <h4>A Recipe Site</h4>
               </div>
             </div>
           </a>
@@ -44,8 +53,7 @@
             <div class="port_img">
               <img src="../../../assets/news.png" alt="News Site">
               <div class="port_text">
-                <h4>News Site</h4>
-                <p>image sub</p>
+                <h4>A News Catalogue</h4>
               </div>
             </div>
           </a>
@@ -53,10 +61,10 @@
         <div class="prtfolio_content">
           <a href="#" class="img_link">
             <div class="port_img">
-              <img src="../../../assets/landing.png" alt="">
+              <img src="../../../assets/cart.png" alt="">
               <div class="port_text">
-                <h4>Landing Page</h4>
-                <p>image sub</p>
+                <h4>e-commerce site</h4>
+                <!-- <p>image sub</p> -->
               </div>
             </div>
           </a>

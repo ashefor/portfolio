@@ -14,6 +14,13 @@ h1,h2,h3,h4,h5,h6{
     margin: 0;
     margin-bottom: .5rem;
 }
+.nav_wrapper{
+    max-width: 1100px;
+    margin: auto
+}
+.menuBtn{
+    display: none
+}
 p{
     margin: 0
 }
@@ -22,7 +29,6 @@ textarea{
 }
 .nav_menu{
     display: flex;
-    max-width: 1500px;
     margin: auto;
 }
 .nav_menu_other{
@@ -91,10 +97,6 @@ textarea{
     100%{
         transform: rotatey(360deg)
     }
-}
-.homesection{
-    /* display: flex */
-    /* height: 100vh; */
 }
 .get_in_touch{
     text-align: center
@@ -314,4 +316,84 @@ footer{
     background:#79c879;
     color:#fff;
     margin-bottom:10px;
-  }
+}
+@media (max-width: 767px){
+    .menuBtn{
+        display: block
+    }
+    .nav_menu{
+        position: fixed;
+        /* left: 5%; */
+        background-color: white;
+        z-index: 99;
+        width: 100%
+    }
+    #linksha{
+        display: none;
+        text-align: center;
+        width: 100%;
+        flex-direction: column;
+        position: fixed;
+        top: 80px;
+        left: 0;
+        background: #ffffff;
+        z-index: 2;
+        border-bottom: 1px solid #c7bfcf;
+        height: 100%;
+    }
+    #linksha ul{
+        display: block;
+    }
+    .contact_header{
+        font-size: 45px;
+        margin-top: 8rem
+    }
+    .part_about_imfo{
+        display: block;
+        padding-top: 8rem;
+        margin: 0;
+    }
+    .about_me_wrapper{
+        margin-top: 2rem;
+    }
+    .navlink{
+        min-width: unset;
+        font-size: 25px;
+        border: unset;
+    }
+    #openmenu{
+        color: unset;
+        border: 1px solid grey;
+    }
+    .padsection{
+        padding: 10px;
+    }
+    footer{
+        padding: 10px;
+        text-align: center;
+    }
+    .contact{
+        display: block
+    }
+    .contact_form_container{
+        padding: 1.5rem;
+    }
+    .form_contact{
+        margin-top: 2rem;
+    }
+}
+@media (max-width:900px){
+    .padsection{
+        padding: 20px;
+    }
+    .contact{
+        grid-gap: 1rem;
+    }
+    .contact_form_container{
+        padding: 2rem;
+    }
+    footer{
+        padding: 20px;
+        text-align: center;
+    }
+}

@@ -1,6 +1,6 @@
 
 <div class="homesection">
-  <section>
+  <section class="nav_wrapper">
     <div class="homesection_info">
       <nav class="nav_menu">
         <div class="nav_menu_links">
@@ -10,17 +10,22 @@
               </a>
             </li>
         </div>
-        <div class="nav_menu_other">
+        <div id="linksha" class="nav_menu_other">
           <ul>
             <li><a routerLink="/about" routerLinkActive="active" class="navlink">About</a></li>
             <li><a routerLink="/projects" routerLinkActive="active"  class="navlink">Projects</a></li>
             <li><a routerLink="/contact" routerLinkActive="active"  class="navlink">Contact</a></li>
           </ul>
         </div>
+        <div class="nav_menu_other menuBtn">
+          <li (click)="toggleMenu()">
+              <span id="openmenu" class="navlink">&#9778;</span>
+          </li>
+      </div>
       </nav>
     </div>
   </section>
-  <section>
+  <section class="padsection">
     <section class="part_about_imfo">
       <div class="part_abt_img">
         <div>
@@ -44,7 +49,7 @@
           <p>
               I love playing FIFA, listening to Pop music (good ones) and watching movies (the good ones please). I am a big fan of the <a href="https://en.wikipedia.org/wiki/Marvel_Cinematic_Universe" target="_blank">MCU</a>
           </p>
-          <a href="../../../assets/files//michaelashefor.pdf" target="_blank" class="resume_btn">View Resume</a>
+          <a href="../../../assets/files//Resume.pdf" target="_blank" class="resume_btn">View Resume</a>
         </div>
       </div>
     </section>

@@ -7,7 +7,8 @@ import { ProjectsComponent } from './components/projects/projects.component';
 import { SkillsComponent } from './components/skills/skills.component';
 
 const routes: Routes = [
-  {path: '', component: HomeComponent, data: {title: 'Michael Ashefor - Frontend Developer'}},
+  // {path: '', component: HomeComponent, data: {title: 'Michael Ashefor - Frontend Developer'}},
+  {path: '', redirectTo: 'about', pathMatch: 'full'},
   {path: 'contact', component: ContactComponent, data: {title: 'Contact- Michael Ashefor - Frontend Developer'}},
   {path: 'about', component: AboutComponent, data: {title: 'About- Michael Ashefor - Frontend Developer'}},
   {path: 'projects', component: ProjectsComponent, data: {title: 'Projects- Michael Ashefor - Frontend Developer'}},

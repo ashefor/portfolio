@@ -1,4 +1,4 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, OnInit, AfterViewInit } from '@angular/core';
 import { Title } from '@angular/platform-browser';
 
 @Component({
@@ -9,9 +9,18 @@ import { Title } from '@angular/platform-browser';
 export class ProjectsComponent implements OnInit {
   title = 'Projects- Michael Ashefor - Frontend Developer'
   constructor(private titleService: Title) { }
-
+  isloading;
   ngOnInit() {
-    this.titleService.setTitle(this.title)
+    this.titleService.setTitle(this.title);
+    this.isloading = true;
   }
 
+  toggleMenu() {
+    let othernav = document.getElementById('linksha')
+    if (othernav.style.display === 'block') {
+      othernav.style.display = 'none'
+    } else {
+      othernav.style.display = 'block'
+    }
+  }
 }
